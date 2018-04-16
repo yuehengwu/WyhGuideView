@@ -32,6 +32,13 @@
     self.viewArray = @[self.view1,self.view2,self.view3];
     
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.guideView show];
+}
+
 - (IBAction)start:(id)sender {
     
     [self.guideView show];
